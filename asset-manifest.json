@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/route-animate/static/css/main.e583dd8c.css",
+    "main.js": "/route-animate/static/js/main.fc949ca1.js",
+    "index.html": "/route-animate/index.html",
+    "main.e583dd8c.css.map": "/route-animate/static/css/main.e583dd8c.css.map",
+    "main.fc949ca1.js.map": "/route-animate/static/js/main.fc949ca1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e583dd8c.css",
+    "static/js/main.fc949ca1.js"
+  ]
+}
