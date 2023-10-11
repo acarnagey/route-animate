@@ -2,7 +2,9 @@
 
 Camera animate a route
 
-Ref: https://www.mapbox.com/blog/building-cinematic-route-animations-with-mapboxgl
+[https://acarnagey.github.io/marine-crime-map/](https://acarnagey.github.io/route-animate/)
+
+Refs: https://www.mapbox.com/blog/building-cinematic-route-animations-with-mapboxgl
 https://github.com/mapbox/impact-tools/tree/master/journey-animation-sequence
 
 # Export to mp4
