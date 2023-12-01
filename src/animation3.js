@@ -50,7 +50,7 @@ const playAnimations = async (mapboxgl, map, path, lineId) => {
       endPitch: 50,
       mapboxgl,
     });
-    const durationFactor = 10;
+    const durationFactor = 4;
     const { endBearing } = await animatePath({
       map,
       duration: 19157.779 * durationFactor,
