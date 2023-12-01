@@ -6,6 +6,8 @@ Camera animate a route
 
 Refs: https://www.mapbox.com/blog/building-cinematic-route-animations-with-mapboxgl
 https://github.com/mapbox/impact-tools/tree/master/journey-animation-sequence
+https://docs.mapbox.com/mapbox-gl-js/example/query-terrain-elevation/
+https://docs.mapbox.com/help/getting-started/directions/
 
 # Export to mp4
 

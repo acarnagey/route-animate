@@ -1,3 +1,5 @@
+// https://github.com/mapbox/impact-tools/blob/master/journey-animation-sequence/js/util.js
+
 // given a bearing, pitch, altitude, and a targetPosition on the ground to look at,
 // calculate the camera's targetPosition as lngLat
 let previousCameraPosition;
@@ -80,4 +82,6 @@ const createGeoJSONCircle = (center, radiusInKm, points = 64) => {
   };
 };
 
-export { computeCameraPosition, createGeoJSONCircle };
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+export { computeCameraPosition, createGeoJSONCircle, delay };

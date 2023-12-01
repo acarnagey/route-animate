@@ -9,7 +9,10 @@ const animatePath = async ({
   startAltitude,
   pitch,
   mapboxgl,
+  lineId,
 }) => {
+  let bearing = startBearing;
+
   return new Promise(async (resolve) => {
     const pathDistance = turf.lineDistance(path);
     let startTime;
@@ -20,7 +23,7 @@ const animatePath = async ({
 
       // when the duration is complete, resolve the promise and stop iterating
       if (animationPhase > 1) {
-        resolve();
+        resolve({ endBearing: bearing });
         return;
       }
       // Get the new latitude and longitude by sampling along the path
@@ -33,7 +36,7 @@ const animatePath = async ({
 
       // Reduce the visible length of the line by using a line-gradient to cutoff the line
       // animationPhase is a value between 0 and 1 that reprents the progress of the animation
-      map.setPaintProperty("line", "line-gradient", [
+      map.setPaintProperty(lineId || "line", "line-gradient", [
         "step",
         ["line-progress"],
         "yellow",
@@ -42,7 +45,7 @@ const animatePath = async ({
       ]);
 
       // Rotate the camera
-      const bearing = startBearing - animationPhase * 200.0;
+      // bearing = startBearing - animationPhase * 200.0;
       // const bearing = startBearing;
       const camera = map.getFreeCameraOptions();
 

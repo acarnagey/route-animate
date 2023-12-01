@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 import { computeCameraPosition } from "./util.js";
 
+// https://github.com/mapbox/impact-tools/blob/master/journey-animation-sequence/js/fly-in-and-rotate.js
 const flyInAndRotate = async ({
   map,
   targetLngLat,
